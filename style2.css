@@ -1,0 +1,48 @@
+.match-date-card-container{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.match-date{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgb(0,0,0,.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+.flags{
+    display: flex;
+    gap: 10px;
+}
+.flags img{
+    width: 100%;
+    height: auto;
+}
+.flags h3{
+    align-self: center;
+}
+.match-content {
+    text-align: center;
+    padding: 10px 0;
+}
+.match-content h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.match-content p{
+    color: lightslategray;
+    font-size: 12px;
+}
+@media screen and (max-width:576px) {
+    .match-date-card-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .match-date-card-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
